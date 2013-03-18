@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cd "$(dirname "$0")"
+cd "$(dirname "${BASH_SOURCE}")"
 # git pull
 function doIt() {
     rsync --exclude "gap" --exclude "git" --exclude "terminal" --exclude "zeebox" \
