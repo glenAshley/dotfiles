@@ -1,10 +1,10 @@
 #!/bin/bash
 
 cd "$(dirname "${BASH_SOURCE}")"
-# git pull
+git pull
 function doIt() {
     rsync --exclude "gap" --exclude "git" --exclude "terminal" --exclude "zeebox" \
-        --exclude ".git/" --exclude ".DS_Store" --exclude "sync.sh" --exclude "README.md" \
+        --exclude ".git/" --exclude ".DS_Store" --exclude "bootstrap.sh" --exclude "README.md" \
         --exclude ".gitignore" -av . ~
 }
 if [ "$1" == "--force" -o "$1" == "-f" ]; then

@@ -7,7 +7,7 @@ https://github.com/paulirish/dotfiles/
 
 ## Setup
 
-run sync.sh to set up, and to update
+run bootstrap.sh to set up, or to update
 
 
 ## Extra
