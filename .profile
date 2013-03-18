@@ -34,7 +34,7 @@ done
 complete -o "nospace" -W "Contacts Calendar Dock Finder Mail Safari iTunes SystemUIServer Terminal Twitter" killall
 
 # add completion for git
-~/.git-completion.sh && source ~/.git-completion.sh
+# ~/.git-completion.sh && . ~/.git-completion.sh
 
 # If possible, add tab completion for many more commands
 [ -f /etc/bash_completion ] && source /etc/bash_completion
