@@ -1,0 +1,40 @@
+alias grep='grep --color=auto'
+
+alias ip='ipconfig getifaddr en0'
+alias ip.c='ipconfig getifaddr en0 | pbcopy'
+alias ip.e='curl -s ipecho.net/plain | grep .' # external
+alias subl='open -a "Sublime Text 2"'
+alias hosts='open /etc/hosts'
+alias ssh.git='ssh git@screenrev.selfip.net'
+alias ~='cd ~'
+
+# verrot
+alias ver='cat ~/.verrotcache | grep'
+
+# start servers
+alias st.mc='cd $HOME/Sites/zeebox/mission-control/node-app; nodemon app.js'
+alias st.ass='simple-server $HOME/Sites/zeebox/showtime/assets 4000'
+alias st.z='simple-server $HOME/Sites/zeebox 5000'
+alias st.w='cd $HOME/Sites/zeebox/mission-control/src/test/widgets; open -a "Google Chrome Canary" http://localhost:5111/; node carousel-test.js -h $HOME/Sites/zeebox/openbox-carousel/public/'
+
+
+# Finder
+alias fixopenwith='/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister -kill -r -domain local -domain system -domain user; killall Finder'
+
+# go to project base
+alias cd.z='cd /Users/glen/Sites/zeebox/' # zeebox
+alias cd.mc='cd /Users/glen/Sites/zeebox/mission-control/' # mission-control
+alias cd.ass='cd /Users/glen/Sites/zeebox/openbox/assets/' # openbox/assets
+alias cd.3p='cd /Users/glen/Sites/zeebox/openbox-3p/' # openbox-3p
+alias cd.api='cd /Users/glen/Sites/zeebox/openbox/api/' # openbox/assets
+alias cd.car='cd /Users/glen/Sites/zeebox/openbox-carousel/'
+alias cd.shows='cd /Users/glen/Sites/zeebox/openbox/shows/'
+alias cd.play='cd /Users/glen/Sites/playground/'
+alias cd.sites='cd /Users/glen/Sites/'
+
+# trace network activity
+alias sniff="sudo ngrep -W byline -d 'en0' -t '^(GET|POST) ' 'tcp and port 80'"
+
+
+# ssh itunes sharing
+alias itunes.gas="ssh -N glen@i.screenrev.com -L 3690:localhost:3689 -f; dns-sd -P GAS _daap._tcp local 3690 localhost.local 127.0.0.1 &"
