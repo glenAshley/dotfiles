@@ -23,6 +23,7 @@ alias st.w='cd $HOME/Sites/zeebox/mission-control/src/test/widgets; open -a "Goo
 alias fixopenwith='/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister -kill -r -domain local -domain system -domain user; killall Finder'
 
 # go to project base
+alias cd.root='cd $(git rev-parse --show-toplevel)' # go to git project root
 alias cd.z='cd /Users/glen/Sites/zeebox/' # zeebox
 alias cd.mc='cd /Users/glen/Sites/zeebox/mission-control/' # mission-control
 alias cd.ass='cd /Users/glen/Sites/zeebox/openbox/assets/' # openbox/assets
