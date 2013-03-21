@@ -12,12 +12,14 @@
     t = tag
     d = diff --stat -p -C
     ds = diff --staged --stat -p -C
-    ci = commit -v
+    ct = commit -v
+    ctc = commit -v -c HEAD
     co = checkout
     st = status -sb
     wc = whatchanged --abbrev-commit --date=relative --date-order --pretty='format:%Cgreen%h %Cblue%ar %Credby %an%Creset -- %s' -n 45
     ll = log --graph --date=relative --topo-order --pretty='format:%C(yellow)%h%C(yellow)%d %Cblue%ar %Cgreenby %an%Creset -- %s'
     lla = log --graph --date=relative --topo-order --pretty='format:%Cgreen%h %Cblue%ar %Credby %an%Creset -- %s' --all
+    ll1 = log --graph --date=relative --topo-order --pretty='format:%Cgreen%h %Cblue%ar %Credby %an%Creset -- %s' --all -1
     gl = log --decorate --graph --abbrev-commit --color --color-words --topo-order --pretty=medium
     gla = log --decorate --graph --abbrev-commit --color --color-words --topo-order --pretty=medium --all
     sl = log --decorate --graph --abbrev-commit --color --topo-order --pretty=oneline
@@ -33,3 +35,5 @@
 	ui = true
 [merge]
 	tool = opendiff
+[push]
+	default = matching
