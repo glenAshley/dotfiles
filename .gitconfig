@@ -8,6 +8,7 @@
 [mergetool]
 	keepBackup = true
 [alias]
+    pa = !git pull && git submodule update --init --recursive
     b = branch
     t = tag
     d = diff --stat -p -C
