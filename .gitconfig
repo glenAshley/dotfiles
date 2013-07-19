@@ -1,5 +1,5 @@
 [user]
-	name = Glen Ashley Peterson
+	name = GAP
 	email = glen@screenrev.com
 [core]
 	quotepath = false
@@ -16,7 +16,8 @@
     ct = commit -v
     ctp = commit -v -p
     ctc = commit -v -c HEAD
-    co = "!f(){ git checkout \"$@\" && git submodule update --init --recursive; }; f"
+    co = checkout
+    cos = "!f(){ git checkout \"$@\" && git submodule update --init --recursive; }; f"
     st = status -sb
     ri = rebase -i
     wc = whatchanged --abbrev-commit --date=relative --date-order --pretty='format:%Cgreen%h %Cblue%ar %Credby %an%Creset -- %s' -n 45
@@ -39,4 +40,4 @@
 [merge]
 	tool = opendiff
 [push]
-	default = matching
+	default = upstream
