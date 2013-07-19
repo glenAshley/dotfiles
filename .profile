@@ -14,7 +14,7 @@ unset file
 # Prefer US English and use UTF-8
 export LANG="en_GB"
 # export LC_ALL="en_GB.UTF-8" # Prefer individual settings
-export LC_TIME="en_GB.UTF-8"
+# export LC_TIME="en_GB.UTF-8" # breaks on Ubuntu
 export LC_MONETARY="en_GB.UTF-8"
 export LC_MEASUREMENT="en_GB.UTF-8"
 export LC_PAPER="en_GB.UTF-8"
