@@ -12,7 +12,7 @@ done
 unset file
 
 # Prefer US English and use UTF-8
-export LANG="en_GB"
+# export LANG="en_GB" # also breaks on Ubuntu
 # export LC_ALL="en_GB.UTF-8" # Prefer individual settings
 # export LC_TIME="en_GB.UTF-8" # breaks on Ubuntu
 export LC_MONETARY="en_GB.UTF-8"
