@@ -18,5 +18,6 @@ open -a App\ Store
 # install npm/node
 # npm install -g nodemon grunt-cli
 # sudo ln -s "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" /usr/bin/subl
+# ln -s ~/Dropbox/AppData/iTerm\ 2/com.googlecode.iterm2.plist ~/Library/Preferences/com.googlecode.iterm2.plist
 
 
