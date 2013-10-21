@@ -16,18 +16,7 @@ open -a App\ Store
 
 
 # install home brew
-# install npm/node
-# npm install -g nodemon grunt-cli
-# sudo ln -s "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" /usr/bin/subl
-# ln -s ~/Dropbox/AppData/iTerm\ 2/com.googlecode.iterm2.plist ~/Library/Preferences/com.googlecode.iterm2.plist
-
-
-# synchronise app settings
-
-# make directories
-mkdir -p "~/Dropbox/AppData/Sublime Text 3/Installed Packages"
-mkdir -p "~/Dropbox/AppData/Sublime Text 3/Packages"
-mkdir -p "~/Library/Application Support/Sublime Text 3/Installed Packages"
-mkdir -p "~/Library/Application Support/Sublime Text 3/Packages"
-ln -s "~/Dropbox/AppData/Sublime Text 3/Installed Packages/" "~/Library/Application Support/Sublime Text 3/Installed Packages/"
-ln -s "~/Dropbox/AppData/Sublime Text 3/Packages/" "~/Library/Application Support/Sublime Text 3/Packages/"
+ruby -e "$(curl -fsSL https://raw.github.com/mxcl/homebrew/go)"
+# install node.js, npm, grunt etc.
+brew install node
+npm install -g nodemon grunt-cli
