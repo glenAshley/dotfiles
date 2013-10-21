@@ -8,6 +8,7 @@ open http://www.sublimetext.com/3
 open https://www.google.com/intl/en/chrome/browser/canary.html
 open http://www.skype.com/en/download-skype/skype-for-computer/
 open http://www.keepassx.org/downloads/
+open http://www.charlesproxy.com/latest-release/download.do
 
 
 # open app store to install purchased apps
@@ -21,3 +22,12 @@ open -a App\ Store
 # ln -s ~/Dropbox/AppData/iTerm\ 2/com.googlecode.iterm2.plist ~/Library/Preferences/com.googlecode.iterm2.plist
 
 
+# synchronise app settings
+
+# make directories
+mkdir -p "~/Dropbox/AppData/Sublime Text 3/Installed Packages"
+mkdir -p "~/Dropbox/AppData/Sublime Text 3/Packages"
+mkdir -p "~/Library/Application Support/Sublime Text 3/Installed Packages"
+mkdir -p "~/Library/Application Support/Sublime Text 3/Packages"
+ln -s "~/Dropbox/AppData/Sublime Text 3/Installed Packages/" "~/Library/Application Support/Sublime Text 3/Installed Packages/"
+ln -s "~/Dropbox/AppData/Sublime Text 3/Packages/" "~/Library/Application Support/Sublime Text 3/Packages/"
