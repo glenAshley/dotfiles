@@ -1,5 +1,5 @@
 # Add .bin file to path, and local folder
-export PATH=$HOME/.bin:$PATH:.
+export PATH=$HOME/.bin:/usr/local/bin:$PATH:.
 
 # Colours
 export CLICOLOR=1
