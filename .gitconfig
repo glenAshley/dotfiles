@@ -3,7 +3,7 @@
 	email = glen@screenrev.com
 [core]
 	quotepath = false
-	excludesfile = /Users/glen/.gitignore_global
+	excludesfile = ~/.gitignore_global
 	editor = subl -w
 [mergetool]
 	keepBackup = true
