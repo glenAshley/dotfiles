@@ -3,7 +3,7 @@
 cd "$(dirname "${BASH_SOURCE}")"
 git pull
 function doIt() {
-    rsync --exclude "gap" --exclude "git" --exclude "init" \
+    rsync --exclude "gap" --exclude "git" --exclude "init" --exclude "setup*" \
         --exclude ".git/" --exclude ".DS_Store" --exclude "bootstrap.sh" --exclude "README.md" \
         --exclude ".gitignore" -av . ~
 }

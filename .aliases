@@ -7,12 +7,9 @@ alias ip='echo -n `ipconfig getifaddr en0` | tee >(pbcopy)' # internal
 alias ip.e='echo -n `curl -s ipecho.net/plain` | tee >(pbcopy)' # internal
 alias subl='open -a "Sublime Text"'
 alias hosts='open /etc/hosts'
-alias ssh.git='ssh git@screenrev.selfip.net'
 alias ~='cd ~'
 alias ..='cd ..'
 
-# Finder
-alias fixopenwith='/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister -kill -r -domain local -domain system -domain user; killall Finder'
 
 # Git
 alias cd.root='cd $(git rev-parse --show-toplevel)' # go to git project root
