@@ -20,3 +20,5 @@ ruby -e "$(curl -fsSL https://raw.github.com/mxcl/homebrew/go)"
 # install node.js, npm, grunt etc.
 brew install node git bash-completion
 npm install -g nodemon grunt-cli
+#install meteor
+curl https://install.meteor.com/ | sh
