@@ -7,6 +7,8 @@ alias ip='echo -n `ipconfig getifaddr en0` | tee >(pbcopy)' # internal
 alias ip.e='echo -n `curl -s ipecho.net/plain` | tee >(pbcopy)' # internal
 alias subl='open -a "Sublime Text"'
 alias hosts='open /etc/hosts'
+alias mongostart='launchctl start org.mongodb.mongo'
+alias mongostop='launchctl stop org.mongodb.mongo'
 alias ~='cd ~'
 alias ..='cd ..'
 
