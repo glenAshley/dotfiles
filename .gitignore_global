@@ -1,3 +1,4 @@
 .DS_Store
 .meteor
 *.sublime-*
+npm-debug.log

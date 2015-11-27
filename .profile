@@ -48,5 +48,5 @@ fi
 [ -f /etc/bash_completion ] && source /etc/bash_completion
 
 
-# NVM (node version manager)
-[[ -s /Users/glen/.nvm/nvm.sh ]] && . /Users/glen/.nvm/nvm.sh
+# react
+REACT_EDITOR=subl
