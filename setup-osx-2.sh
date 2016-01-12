@@ -11,9 +11,9 @@ mkdir -p "~/Dropbox/AppData/Sublime Text 3/Installed Packages"
 mkdir -p "~/Dropbox/AppData/Sublime Text 3/Packages"
 mkdir -p "~/Library/Application Support/Sublime Text 3/Installed Packages"
 mkdir -p "~/Library/Application Support/Sublime Text 3/Packages"
-ln -s "~/Dropbox/AppData/Sublime Text 3/Installed Packages/" "~/Library/Application Support/Sublime Text 3/Installed Packages/"
-ln -s "~/Dropbox/AppData/Sublime Text 3/Packages/" "~/Library/Application Support/Sublime Text 3/Packages/"
-sudo mkdir ~/.bin
+ln -s "~/Dropbox/AppData/Sublime Text 3/Installed Packages/" "~/Library/Application Support/Sublime Text 3/"
+ln -s "~/Dropbox/AppData/Sublime Text 3/Packages/" "~/Library/Application Support/Sublime Text 3/"
+#sudo mkdir ~/.bin
 sudo ln -s "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" ~/.bin/subl
 
 # iTerm
