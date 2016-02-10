@@ -11,6 +11,9 @@ alias mongostop='launchctl stop org.mongodb.mongo'
 alias ~='cd ~'
 alias ..='cd ..'
 
+# FTP
+alias ftpon="sudo -s launchctl load -w /System/Library/LaunchDaemons/ftp.plist"
+alias ftpoff="sudo -s launchctl unload -w /System/Library/LaunchDaemons/ftp.plist"
 
 # Git
 alias cd.root='cd $(git rev-parse --show-toplevel)' # go to git project root
