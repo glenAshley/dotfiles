@@ -4,10 +4,8 @@
 open http://www.iterm2.com/
 open https://www.dropbox.com/install2
 open https://agilebits.com/downloads
-open http://www.sublimetext.com/3
-open https://www.google.com/intl/en/chrome/browser/canary.html
+open http://atom.io/
 open http://www.skype.com/en/download-skype/skype-for-computer/
-open http://www.keepassx.org/downloads/
 open http://www.charlesproxy.com/latest-release/download.do
 
 
