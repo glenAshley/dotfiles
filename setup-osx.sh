@@ -14,7 +14,7 @@ open -a App\ Store
 
 
 # install home brew
-ruby -e "$(curl -fsSL https://raw.github.com/mxcl/homebrew/go)"
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 # install node.js, npm, grunt etc.
 brew install node git bash-completion
 npm install -g nodemon grunt-cli
