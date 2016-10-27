@@ -14,6 +14,9 @@
     d = diff --stat -p -C
     ds = diff --staged --stat -p -C
     ct = commit -v
+    ctm = commit -vm
+    addp = add -p
+    addn = add -N
     ctp = commit -v -p
     ctc = commit -v -c HEAD
     co = checkout
