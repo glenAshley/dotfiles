@@ -1,6 +1,11 @@
 # Add .bin file to path, and local folder
 export PATH=$HOME/.bin:/usr/local/bin:$PATH:.
 
+# Vagrant
+function homestead() {
+    ( cd ~/Homestead && vagrant $* )
+}
+
 # Colours
 export CLICOLOR=1
 
@@ -51,4 +56,9 @@ fi
 
 
 # react
-REACT_EDITOR=subl
+export ANDROID_HOME=~/Library/Android/sdk
+export PATH=${PATH}:${ANDROID_HOME}/tools
+export PATH=${PATH}:${ANDROID_HOME}/platform-tools
+
+# yarn
+export PATH="$HOME/.yarn/bin:$PATH"
