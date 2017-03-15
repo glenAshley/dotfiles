@@ -1,5 +1,7 @@
 # Add .bin file to path, and local folder
 export PATH=$HOME/.bin:/usr/local/bin:$PATH:.
+# Yarn
+export PATH="$(yarn global bin):$PATH"
 
 # Vagrant
 function homestead() {
