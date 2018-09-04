@@ -1,12 +1,5 @@
 # Add .bin file to path, and local folder
 export PATH=$HOME/.bin:/usr/local/bin:$PATH:.
-# Yarn
-export PATH="$(yarn global bin):$PATH"
-
-# Vagrant
-function homestead() {
-    ( cd ~/Homestead && vagrant $* )
-}
 
 # Colours
 export CLICOLOR=1
@@ -62,5 +55,10 @@ export ANDROID_HOME=~/Library/Android/sdk
 export PATH=${PATH}:${ANDROID_HOME}/tools
 export PATH=${PATH}:${ANDROID_HOME}/platform-tools
 
+# nvm
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+
 # yarn
+export PATH="$(yarn global bin):$PATH"
 export PATH="$HOME/.yarn/bin:$PATH"
