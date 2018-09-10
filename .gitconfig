@@ -4,7 +4,7 @@
 [core]
 	quotepath = false
 	excludesfile = ~/.gitignore_global
-	editor = subl -w
+	editor = atom --wait
 [mergetool]
 	keepBackup = true
 [alias]
