@@ -4,22 +4,25 @@ Mostly borrowed from
 https://github.com/mathiasbynens/dotfiles/
 https://github.com/paulirish/dotfiles/
 
-
 ## Setup
 
 run bootstrap.sh to set up, or to update
 
-
 ## Extra
 
-Extra is for config which isn't committed to the repo
+Extra is for config which isn't committed to the repo, eg.
 
-eg.
+```
+export MY_SECRET="don't tell anyone"
+```
 
-    # Git
-    export GIT_AUTHOR_NAME="Glen Ashley Peterson"
-    export GIT_AUTHOR_EMAIL=glen@screenrev.com
-    export GIT_COMMITTER_NAME="$GIT_AUTHOR_NAME"
-    export GIT_COMMITTER_EMAIL="$GIT_AUTHOR_EMAIL"
-    git config --global user.name "$GIT_AUTHOR_NAME"
-    git config --global user.email "$GIT_AUTHOR_EMAIL"
+## Troubleshooting
+
+**nvm**
+if `nvm` gives errors like
+
+```
+nvm is not compatible with the npm config "prefix" option
+```
+
+see [Best way to install and use nvm on Mac](https://medium.com/@isaacjoe/best-way-to-install-and-use-nvm-on-mac-e3a3f6bc494d)
