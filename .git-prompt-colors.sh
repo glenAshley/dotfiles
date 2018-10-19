@@ -11,27 +11,27 @@ override_git_prompt_colors() {
   ## These are the color definitions used by gitprompt.sh
   GIT_PROMPT_PREFIX="("                 # start of the git info string
   GIT_PROMPT_SUFFIX=")"                 # the end of the git info string
-  # GIT_PROMPT_SEPARATOR="|"              # separates each item
+  GIT_PROMPT_SEPARATOR="|"              # separates each item
 
   GIT_PROMPT_BRANCH="${Green}"        # the git branch that is active in the current directory
   # GIT_PROMPT_MASTER_BRANCH="${GIT_PROMPT_BRANCH}" # used if the git branch that is active in the current directory is $GIT_PROMPT_MASTER_BRANCHES
-  # GIT_PROMPT_STAGED="${Red}●"           # the number of staged files/directories
-  # GIT_PROMPT_CONFLICTS="${Red}✖ "       # the number of files in conflict
-  # GIT_PROMPT_CHANGED="${Blue}✚ "        # the number of changed files
+  GIT_PROMPT_STAGED="${Red}•"           # the number of staged files/directories
+  GIT_PROMPT_CONFLICTS="${Red}×"       # the number of files in conflict
+  GIT_PROMPT_CHANGED="${Blue}+"        # the number of changed files
 
   # GIT_PROMPT_REMOTE=" "                 # the remote branch name (if any) and the symbols for ahead and behind
   # GIT_PROMPT_UNTRACKED="${Cyan}…"       # the number of untracked files/dirs
-  GIT_PROMPT_STASHED="${Blue}⚑ "    # the number of stashed files/dir
-  GIT_PROMPT_CLEAN="${Green}✔"      # a colored flag indicating a "clean" repo
+  GIT_PROMPT_STASHED="${Blue}±"    # the number of stashed files/dir
+  GIT_PROMPT_CLEAN="${Green}✓"      # a colored flag indicating a "clean" repo
 
   ## For the command indicator, the placeholder _LAST_COMMAND_STATE_ 
   ## will be replaced with the exit code of the last command
   ## e.g.
-  ## GIT_PROMPT_COMMAND_OK="${Green}✔-_LAST_COMMAND_STATE_ "    # indicator if the last command returned with an exit code of 0
-  ## GIT_PROMPT_COMMAND_FAIL="${Red}✘-_LAST_COMMAND_STATE_ "    # indicator if the last command returned with an exit code of other than 0
+  GIT_PROMPT_COMMAND_OK="${Green}✓-_LAST_COMMAND_STATE_ "    # indicator if the last command returned with an exit code of 0
+  GIT_PROMPT_COMMAND_FAIL="${Red}×-_LAST_COMMAND_STATE_ "    # indicator if the last command returned with an exit code of other than 0
 
-  # GIT_PROMPT_COMMAND_OK="${Green}✔"    # indicator if the last command returned with an exit code of 0
-  # GIT_PROMPT_COMMAND_FAIL="${Red}✘-_LAST_COMMAND_STATE_"    # indicator if the last command returned with an exit code of other than 0
+  GIT_PROMPT_COMMAND_OK="${Green}✓"    # indicator if the last command returned with an exit code of 0
+  GIT_PROMPT_COMMAND_FAIL="${Red}×-_LAST_COMMAND_STATE_"    # indicator if the last command returned with an exit code of other than 0
 
   ## template for displaying the current virtual environment
   ## use the placeholder _VIRTUALENV_ will be replaced with 
