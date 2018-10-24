@@ -6,7 +6,27 @@ https://github.com/paulirish/dotfiles/
 
 ## Setup
 
-run bootstrap.sh to set up, or to update
+To set up, or to update
+
+```
+bootstrap.sh
+```
+
+Then, if on a MacOS machine
+
+```
+setup-osx.sh
+```
+
+This opens webpages for downloads, installs homebrew etc.
+
+## iTerm
+
+Open iTerm preferences and choose "Load preferences from a custom URL or folder", and choose
+
+```
+~/Dropbox/AppData/iTerm 2
+```
 
 ## Extra
 

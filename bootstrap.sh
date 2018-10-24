@@ -8,13 +8,22 @@ function doIt() {
         --exclude ".gitignore" -av . ~
 }
 if [ "$1" == "--force" -o "$1" == "-f" ]; then
-    doIt
+  doIt
 else
-    read -p "This may overwrite existing files in your home directory. Are you sure? (y/n) " -n 1
-    echo
-    if [[ $REPLY =~ ^[Yy]$ ]]; then
-        doIt
-    fi
+  read -p "This may overwrite existing files in your home directory. Are you sure? (y/n) " -n 1
+  echo
+  if [[ $REPLY =~ ^[Yy]$ ]]; then
+    doIt
+  fi
 fi
 unset doIt
 source ~/.profile
+
+# Git user
+printf "\nWhat is your Git user.name? "
+read NAME
+git config --global user.name "$NAME"
+printf "\nWhat is your Git user.email? "
+read EMAIL
+git config --global user.email $EMAIL
+

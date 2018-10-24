@@ -1,6 +1,4 @@
 [user]
-	name = GAP
-	email = glen@screenrev.com
 [core]
 	quotepath = false
 	excludesfile = ~/.gitignore_global
