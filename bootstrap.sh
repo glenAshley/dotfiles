@@ -33,3 +33,4 @@ gpg --list-secret-keys --keyid-format LONG
 printf "\nWhat is your GPG signinkey (after rsa4096/)? "
 read SIGNINKEY
 git config --global user.signinkey $SIGNINKEY
+git config --global commit.gpgsign true
