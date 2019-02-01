@@ -26,4 +26,9 @@ git config --global user.name "$NAME"
 printf "\nWhat is your Git user.email (Git noreply)? "
 read EMAIL
 git config --global user.email $EMAIL
-
+printf "\nSee https://help.github.com/articles/generating-a-new-gpg-key/"
+gpg --full-generate-key
+gpg --list-secret-keys --keyid-format LONG
+printf "\nWhat is your GPG signinkey (after rsa4096/)? "
+read SIGNINKEY
+git config --global user.signingkey $SIGNINKEY
