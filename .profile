@@ -59,4 +59,7 @@ export PATH=${PATH}:${ANDROID_HOME}/tools
 export PATH=${PATH}:${ANDROID_HOME}/platform-tools
 
 export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$(brew --prefix nvm)/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+
+# for GPG with Git
+export GPG_TTY=$(tty)

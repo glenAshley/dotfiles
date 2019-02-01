@@ -23,7 +23,7 @@ source ~/.profile
 printf "\nWhat is your Git user.name? "
 read NAME
 git config --global user.name "$NAME"
-printf "\nWhat is your Git user.email? "
+printf "\nWhat is your Git user.email (Git noreply)? "
 read EMAIL
 git config --global user.email $EMAIL
 

@@ -16,8 +16,8 @@ open -a App\ Store
 # install home brew
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 # install yarn & git
-brew install yarn --without-node
-brew install git bash-completion bash-git-prompt
+# brew install yarn --without-node # who uses yarn now anyway?
+brew install git bash-completion bash-git-prompt gnupg
 # use nvm for node & npm
 curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash
 
