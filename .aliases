@@ -13,7 +13,7 @@ alias ..='cd ..'
 
 # Git
 alias cd.root='cd $(git rev-parse --show-toplevel)' # go to git project root
-alias gitclean='branch --merged master | grep -v "\* master" | xargs -n 1 git branch -d'
+alias gitclean='git branch --merged master | grep -v "\* master" | xargs -n 1 git branch -d'
 
 # trace network activity
 alias sniff="sudo ngrep -W byline -d 'en0' -t '^(GET|POST) ' 'tcp and port 80'"
