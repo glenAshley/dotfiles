@@ -8,12 +8,3 @@ alias ip.e='echo -n `curl -s ipecho.net/plain` | tee >(pbcopy)' # internal
 alias hosts='open /etc/hosts'
 alias mongostart='launchctl start org.mongodb.mongo'
 alias mongostop='launchctl stop org.mongodb.mongo'
-alias ~='cd ~'
-alias ..='cd ..'
-
-# Git
-alias cd.root='cd $(git rev-parse --show-toplevel)' # go to git project root
-alias gitclean='git branch --merged master | grep -v "\* master" | xargs -n 1 git branch -d'
-
-# trace network activity
-alias sniff="sudo ngrep -W byline -d 'en0' -t '^(GET|POST) ' 'tcp and port 80'"

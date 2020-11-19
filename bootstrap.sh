@@ -3,7 +3,7 @@
 cd "$(dirname "${BASH_SOURCE}")"
 git pull
 function doIt() {
-    rsync --exclude "gap" --exclude "git" --exclude "init" --exclude "setup*" \
+    rsync --exclude "gap" --exclude "setup*" \
         --exclude ".git/" --exclude ".DS_Store" --exclude "bootstrap.sh" --exclude "README.md" \
         --exclude ".gitignore" -av . ~
 }
@@ -27,10 +27,10 @@ printf "\nWhat is your Git user.email (Git noreply)? "
 read EMAIL
 git config --global user.email $EMAIL
 
-printf "\nSee https://help.github.com/articles/generating-a-new-gpg-key/"
-gpg --full-generate-key
-gpg --list-secret-keys --keyid-format LONG
-printf "\nWhat is your GPG signinkey (after rsa4096/)? "
-read SIGNINKEY
-git config --global user.signinkey $SIGNINKEY
-git config --global commit.gpgsign true
+# printf "\nSee https://help.github.com/articles/generating-a-new-gpg-key/"
+# gpg --full-generate-key
+# gpg --list-secret-keys --keyid-format LONG
+# printf "\nWhat is your GPG signinkey (after rsa4096/)? "
+# read SIGNINKEY
+# git config --global user.signinkey $SIGNINKEY
+# git config --global commit.gpgsign true
