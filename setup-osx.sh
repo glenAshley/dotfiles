@@ -19,6 +19,10 @@ echo "Install 1Password, Slack, NordVPN, WhatsApp, XCode, Things, GIPHY Capture"
 
 # install home brew
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+# form ARM process
+sudo mkdir /opt/homebrew
+sudo chown -R $(whoami):staff /opt/homebrew
+curl -L https://github.com/Homebrew/brew/tarball/master | tar xz --strip 1 -C /opt/homebrew
 # install zsh
 brew install zsh
 # install oh my zsh
