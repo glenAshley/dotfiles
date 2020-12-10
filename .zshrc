@@ -111,3 +111,7 @@ source $ZSH/oh-my-zsh.sh
 
 # alias for Intel brew installation
 alias ibrew='arch -x86_64 /usr/local/bin/brew'
+
+
+# only page if more than screen
+export LESS="-F -X $LESS"
